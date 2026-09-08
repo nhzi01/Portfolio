@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0"/>
+        <title>Admin</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <div class="admin">
+            <aside class="sidebar" id="bar">
+                <div class="bar-avt">
+                    <img src="avt.jpg" class="avt"/>
+                    <div class="bar-name">Hà Nhật Vy</div>
+                </div>
+
+                <div class="taskbar">
+                    <div class="tb1">Tổng quan</div>
+                    <a class="tb-item">Dự án <span class="tb-tbao">2</span></a>
+                    <a class="tb-item">Kỹ năng</a>
+                </div>
+                <div class="taskbar">
+                    <div class="tb1">Nội dung</div>
+                    <a class="tb-item">Tin nhắn <span class="tb-tbao">5</span></a>
+                    <a class="tb-item">Hồ sơ</a>
+                </div>
+                <div class="taskbar">
+                    <div class="tb1">Hệ thống</div>
+                    <a class="tb-item">Cài đặt</a>
+                </div>
+
+                <div class="tb-footer">
+                    <span style="font-size: 11px; color: var(--text-2);">v1.0.0</span>
+                    <a href="login.html" class="logout">Đăng xuất</a>
+                </div>
+            </aside>
+
+            <header class="topbar">
+                <span class="tb-p">
+                    <span style="color: var(--text-1);">Portfolio</span><span> < </span>Dashboard
+                </span>
+                <div class="search">
+                    <input type="text" placeholder="Tìm kiếm..."/>
+                </div>
+                <div class="actions">
+                    <button class="btn-icon">🔔</button>
+                    <a href="index.html" class="btn-icon">Xem Portfolio</a>
+                </div>
+            </header>
+
+            <main class="main">
+                <div class="grids">
+                    <div class="grid">
+                        <div class="gr-top"><span class="gr1">Dự án</span></div>
+                        <div class="gr-val">2</div>
+                    </div>
+                    <div class="grid">
+                        <div class="gr-top"><span class="gr1">Lượt xem</span></div>
+                        <div class="gr-val">1.01k</div>
+                    </div>
+                    <div class="grid">
+                        <div class="gr-top"><span class="gr1">Tin nhắn</span></div>
+                        <div class="gr-val">2</div>
+                    </div>
+                    <div class="grid">
+                        <div class="gr-top"><span class="gr1">CV tải về</span></div>
+                        <div class="gr-val">2</div>
+                    </div>
+                </div>
+
+                <div class="middle">
+                    <div class="mid">
+                        <div class="card">
+                            <span class="card-title">Danh sách dự án</span>
+                            <button class="card-btn">+ Thêm</button>
+                        </div>
+                        <div style="overflow-x: auto;">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Tên dự án</th>
+                                        <th>Công nghệ</th>
+                                        <th>Trạng thái</th>
+                                        <th>Cập nhật</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>E-Commerce Website</td>
+                                        <td>HTML, CSS</td>
+                                        <td><span class="badge done">Hoàn thành</span></td>
+                                        <td>01/01</td>
+                                        <td><div class="acts"><button class="row-btn">Sửa</button><button class="row-btn del">Xóa</button></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Graphic Designer</td>
+                                        <td>Photoshop, HTML</td>
+                                        <td><span class="badge prog">Đang làm</span></td>
+                                        <td>17/06</td>
+                                        <td><div class="acts"><button class="row-btn">Sửa</button><button class="row-btn del">Xóa</button></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 13px;">
+                        <div class="mid">
+                            <div class="card"><span class="card-title">Thao Tác</span></div>
+                            <div class="card-body">
+                                <div class="card-list">
+                                    <button class="list">Thêm dự án mới</button>
+                                    <button class="list">Cập nhật kỹ năng</button>
+                                    <button class="list">Tải CV lên</button>
+                                    <a href="index.html" class="list">Xem Portfolio</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mid">
+                        <div class="card">
+                            <span class="card-title">Tin nhắn gần đây</span>
+                            <button class="card-btn">Xem tất cả</button>
+                        </div>
+                        <div class="mess">
+                            <div class="mes message">
+                                <div class="me-avt">TT</div>
+                                <div class="me-body">
+                                    <div class="me-name">Trần Tâm - Tech</div>
+                                    <div class="me-pre">Bạn có hứng thú với vị trí intern Frontend không?....</div>
+                                </div>
+                                <span class="me-time">1 giờ trước</span>
+                                <span class="u-dot"></span>
+                            </div>
+                            <div class="mes message">
+                                <div class="me-avt">NN</div>
+                                <div class="me-body">
+                                    <div class="me-name">Như Ngọc</div>
+                                    <div class="me-pre">Giao diện Portfolio của bạn...</div>
+                                </div>
+                                <div class="me-time">1 ngày trước</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
